@@ -4,46 +4,12 @@
   * Please see the included README.md file for license terms and conditions.
   -->
 <head>
-    <title>Blank Standard HTML5 Web App Template</title>
+    <title>Recipies</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
     <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-    <style>
-        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
-        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
-        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
-        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
-        
-        
-        
-        
-        
-        nav {
-            background: aliceblue;
-            width: 20em;
-        }
-        nav ul {
-            padding-left: 25px;
-        }
-        body {
-            margin: 0;
-        }
-        
-        img {
-            width: 250px;
-            border: 5px solid blue;
-            padding: 8px;
-        }
-        article {
-            margin-left: 40px;
-        }
-        h1 {
-            background: #8f8fff;
-            text-align: center;
-        }
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
 
     <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
     <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
@@ -67,11 +33,20 @@
     <h2>Tacos</h2>
     <img src="images/taco.jpg" alt="">
     <h3>List of Ingredients</h3>
-    <ul>
-        <li>Ingredient 1</li>
-        <li>Ingredient 2</li>
-        <li>Ingredient 3</li>
-    </ul>
+    <table>
+        <tr>
+            <td class="ingredient">Ingredient 1</td>
+            <td class="amount">200 grams</td>
+        </tr>
+        <tr>
+            <td class="ingredient">Ingredient 2</td>
+            <td class="amount">1000 grams</td>
+        </tr>
+        <tr>
+            <td class="ingredient">Ingredient 3</td>
+            <td class="amount">10 grams</td>
+        </tr>
+    </table>
     <p>This is my first recipe. Follow these steps:</p>
     <ol>
         <li>Step 1</li>

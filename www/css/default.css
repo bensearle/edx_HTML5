@@ -1,0 +1,64 @@
+
+/* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+@-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+@-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+
+
+
+
+
+nav {
+    position: fixed;
+    background: aliceblue;
+    width: 20em;
+    margin-left: -8em;
+    top: 4rem;
+    opacity: 0.8;
+}
+nav:hover {
+    margin-left: 0;
+    opacity: 1;
+}
+nav ul {
+    padding-left: 25px;
+}
+body {
+    margin: 0;
+    font-size: 120%;
+}
+
+img {
+    width: 250px;
+    border: 5px solid blue;
+    padding: 8px;
+}
+article {
+    min-width: 20rem;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 4rem;
+}
+h1 {
+    position: fixed;
+    width: 100%;
+    background: #8f8fff;
+    text-align: center;
+    top: 0;
+    margin-top: 0;
+}
+table {
+    margin-left: 2em;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid grey;
+}
+td.ingredient {
+    text-align: left;
+    padding-right: 2em;
+}
+td.amount {
+    text-align: right;
+    padding-left: 2em;
+}
